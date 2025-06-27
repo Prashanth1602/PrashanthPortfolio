@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prashanth Surapaneni | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/ styles.css" />
+</head>
+<body data-bs-theme="light">
+  <!-- Scroll to Top Button -->
+  <button id="scrollTop" class="btn btn-primary position-fixed bottom-0 end-0 m-4 d-none">Top</button>
+
+  <!-- Parallax Background -->
+  <div id="parallax-bg">
+    <div class="parallax-shape shape1"></div>
+    <div class="parallax-shape shape2"></div>
+    <div class="parallax-shape shape3"></div>
+    <div class="parallax-shape shape4"></div>
+  </div>
+
+  <!-- Custom Stylish Navbar -->
+  <nav class="custom-navbar">
+    <div class="nav-content">
+      <a href="#" class="brand-pill">Prashanth</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero/About Banner Section -->
+  <header class="hero-banner text-center py-5 mt-5" id="hero">
+    <div class="hero-banner-content d-flex flex-column align-items-center justify-content-center">
+      <div class="hero-banner-avatar mb-2 position-relative">
+        <img src="assets/profile.jpeg" class="rounded-circle shadow" alt="Prashanth Surapaneni" width="140" height="140" />
+      </div>
+      <h1 class="fw-bold mb-1">Prashanth Surapaneni</h1>
+      <div class="hero-tagline mb-2">
+        <span class="tagline-anim">Building the future with AI &amp; Code</span>
+      </div>
+      <div class="hero-social-icons d-flex justify-content-center gap-3 mb-2">
+        <a href="https://linkedin.com/in/prashanth-surapaneni" target="_blank" aria-label="LinkedIn" class="icon-link">
+          <!-- LinkedIn SVG -->
+          <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+        </a>
+        <a href="https://github.com/Prashanth1602" target="_blank" aria-label="GitHub" class="icon-link">
+          <!-- GitHub SVG -->
+          <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.588 8.199-6.084 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:prashanthsurapaneni123@gmail.com" aria-label="Email" class="icon-link">
+          <!-- Email SVG -->
+          <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.065l-11.99-7.065v14c0 1.104.896 2 2 2h19.98c1.104 0 2-.896 2-2v-14l-11.99 7.065zm11.99-9.065c0-1.104-.896-2-2-2h-19.98c-1.104 0-2 .896-2 2v.217l12 7.083 11.98-7.083v-.217z"/></svg>
+        </a>
+        <a href="tel:+919390412730" aria-label="Phone" class="icon-link">
+          <!-- Phone SVG -->
+          <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.59.57.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4.5c0-.55.45-1 1-1H6.5c.55 0 1 .45 1 1 0 1.26.2 2.47.57 3.59.11.32.03.68-.24 1.01l-2.2 2.2z"/></svg>
+        </a>
+      </div>
+      <div class="hero-banner-wave">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none" class="w-100"><path fill="#6366f1" fill-opacity="0.18" d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,154.7C840,149,960,171,1080,181.3C1200,192,1320,192,1380,192L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="about-flex d-flex align-items-center mb-3">
+      <div>
+        <p>
+          I'm <strong>Prashanth Surapaneni</strong>, an enthusiastic AI Explorer and Full Stack Developer based in Hyderabad, India.
+          Currently pursuing B.Tech in Computer Science at Malla Reddy Engineering College, I am passionate about crafting intelligent,
+          impactful applications that blend <strong>artificial intelligence</strong> with <strong>real-world problem-solving</strong>.
+        </p>
+      </div>
+    </div>
+    <!-- Quick Facts Row -->
+    <div class="quick-facts d-flex flex-wrap gap-3 mb-3">
+      <div class="fact-card">
+        <span class="fact-title">Key Skills</span>
+        <span class="fact-value">AI, Full Stack, ML, Web</span>
+      </div>
+      <div class="fact-card">
+        <span class="fact-title">Location</span>
+        <span class="fact-value">Hyderabad, India</span>
+      </div>
+    </div>
+    <p>
+      As an AI Intern at <strong>Elevate-Labs</strong>, I've worked on projects ranging from medical assistants to movie recommenders,
+      and have also gained valuable documentation experience at <strong>Edu-versity</strong>. My toolkit spans <strong>LangChain, HuggingFace, Flask, MySQL, and modern web stacks</strong>.
+    </p>
+    <p>
+      My goal is to bridge the gap between <strong>technology and societal needs</strong> — whether through fintech tools, educational apps, or creative tech ventures.
+      I believe in <em>"tech for impact, code for change."</em>
+    </p>
+  </section>
+  <section id="skills" class="container py-5" data-aos="fade-up">
+    <h2>Skills</h2>
+   <div class="d-flex flex-wrap gap-3">
+  <span class="badge">Machine Learning</span>
+  <span class="badge">Data Analysis</span>
+  <span class="badge">SQL</span>
+  <span class="badge">HTML, CSS, JS</span>
+  <span class="badge">Flask</span>
+  <span class="badge">MySQL</span>
+  <span class="badge">Hugging Face</span>
+  <span class="badge">yFinance</span>
+  <span class="badge">Scikit-learn</span>
+  <span class="badge">Web Sockets</span>
+  <span class="badge">LangChain</span>
+  <span class="badge">Ollama</span>
+  <span class="badge">ChromaDB</span>
+  <span class="badge">API Integration</span>
+  <span class="badge">Team Collaboration</span>
+</div>
+  </section>
+
+  <section id="projects" class="container py-5" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="row" id="projectList">
+      <!-- AI/ML Projects -->
+<div class="col-md-4 mb-4 project-card" data-category="ai">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Emotion Movie Recommender</h5>
+      <p class="card-text">HuggingFace-based emotion classifier with semantic similarity logic.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4 project-card" data-category="ai">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">ML Project Suite</h5>
+      <p class="card-text">Suite of ML tools: Regression, KNN, SVM, Decision Trees, Clustering.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Fintech Projects -->
+<div class="col-md-4 mb-4 project-card" data-category="fintech">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Finance-Ana</h5>
+      <p class="card-text">50-30-20 rule-based app with personalized financial suggestions.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4 project-card" data-category="ai">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Stock Price Predictor</h5>
+      <p class="card-text">Flask app with yFinance integration for visual predictions.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Web Projects -->
+<div class="col-md-4 mb-4 project-card" data-category="web">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">To-Do List</h5>
+      <p class="card-text">Basic DOM app with task saving in localStorage.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4 project-card" data-category="web">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Weather App</h5>
+      <p class="card-text">Clean UI app fetching real-time data from OpenWeather API.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4 project-card" data-category="web">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Movie Recommender</h5>
+      <p class="card-text">Python + TMDB web scraping based movie similarity engine.</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 mb-4 project-card" data-category="web">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Bright Futures</h5>
+      <p class="card-text">Govt. & Industrial job listing platform with Flask backend.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Full-stack + Chat + AI -->
+<div class="col-md-4 mb-4 project-card" data-category="ai">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">InstaChat</h5>
+      <p class="card-text">Real-time messaging with LLaMA 3.1 AI chat + WebSockets.</p>
+    </div>
+  </div>
+</div>
+
+<!-- LangChain & AI Tools -->
+<div class="col-md-4 mb-4 project-card" data-category="ai">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">Cold Email Sender</h5>
+      <p class="card-text">Personalized outreach tool using LangChain, Groq, LLaMA 3, ChromaDB.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Healthcare AI Tool -->
+<div class="col-md-4 mb-4 project-card" data-category="healthcare">
+  <div class="card h-100 shadow">
+    <div class="card-body">
+      <h5 class="card-title">AI Diagnostic</h5>
+      <p class="card-text">Medical assistant that gathers patient input & suggests tests.</p>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <section id="experience" class="container py-5" data-aos="fade-up">
+    <h2>Experience</h2>
+    <div class="glass-card p-4 mb-4 d-flex align-items-start gap-3">
+      <div class="animated-icon exp-icon">
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#6366f1" opacity="0.15"/><path d="M24 14v10l7 4" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <h5 class="fw-bold mb-1">AI Intern</h5>
+        <div class="text-muted mb-2">Elevate-Labs - Hyderabad, India <span class="badge ms-2">May 2025 - June 2025</span></div>
+        <ul class="mb-0">
+          <li>Developed AI-powered solutions using real-world datasets.</li>
+          <li>Executed efficient data preprocessing pipelines.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="glass-card p-4 mb-4 d-flex align-items-start gap-3">
+      <div class="animated-icon exp-icon">
+        <svg width="40" height="40" fill="none" viewBox="0 0 48 48"><rect x="8" y="8" width="32" height="32" rx="8" fill="#38bdf8" opacity="0.15"/><path d="M16 32V16h16v16" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div>
+        <h5 class="fw-bold mb-1">Industrial Intern</h5>
+        <div class="text-muted mb-2">Edu-versity - Hyderabad, India <span class="badge ms-2">Sept 2024 - Nov 2024</span></div>
+        <ul class="mb-0">
+          <li>Documented technical models and contributed to educational AI research.</li>
+          <li>Strengthened software documentation and versioning skills.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="container py-5" data-aos="fade-up">
+    <h2>Education &amp; Honors</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="glass-card p-4 h-100 d-flex align-items-start gap-3">
+          <div class="animated-icon edu-icon">
+            <svg width="40" height="40" fill="none" viewBox="0 0 48 48"><ellipse cx="24" cy="24" rx="20" ry="12" fill="#f472b6" opacity="0.15"/><path d="M8 20l16-8 16 8-16 8-16-8zm0 0v8c0 4.418 7.163 8 16 8s16-3.582 16-8v-8" stroke="#f472b6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">B.Tech CSE</h5>
+            <div class="text-muted mb-2">Malla Reddy Engineering College</div>
+            <div class="badge mb-2">2023–2027</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="glass-card p-4 h-100 d-flex align-items-start gap-3">
+          <div class="animated-icon edu-icon">
+            <svg width="40" height="40" fill="none" viewBox="0 0 48 48"><rect x="8" y="16" width="32" height="16" rx="8" fill="#38bdf8" opacity="0.15"/><path d="M12 32V20a8 8 0 0 1 8-8h8a8 8 0 0 1 8 8v12" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-1">High School Diploma</h5>
+            <div class="text-muted mb-2">Chinmaya Vidyalaya, Hyderabad</div>
+            <div class="badge mb-2">Completed February 2023</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 mt-3">
+      <div class="col-12">
+        <div class="glass-card p-4 d-flex align-items-start gap-3">
+          <div class="animated-icon honor-icon">
+            <svg width="40" height="40" fill="none" viewBox="0 0 48 48"><circle cx="24" cy="24" r="20" fill="#6366f1" opacity="0.15"/><path d="M24 8v32m-8-8h16" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <h5 class="fw-bold mb-2">Honors &amp; Certifications</h5>
+            <ul class="mb-0">
+              <li>Microsoft Azure Certified</li>
+              <li>IIT HYD Hackathon Participant</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container py-5" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form id="contactForm" action="https://formspree.io/f/mwpbaldq" method="POST" novalidate>
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <div id="formStatus" class="mt-3"></div>
+    </form>
+    <!-- Map/Location Pin -->
+    <div class="contact-map mt-4 d-flex justify-content-center">
+      <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=78.3489%2C17.3850%2C78.4867%2C17.5000&amp;layer=mapnik" style="border-radius: 1.5rem; border: none; width: 100%; max-width: 400px; height: 220px; box-shadow: 0 4px 24px 0 var(--primary);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer-glass text-center py-4">
+    <div class="footer-content d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 container">
+      <div class="footer-brand d-flex align-items-center gap-2">
+        <img src="assets/profile.jpeg" alt="Prashanth Surapaneni" class="footer-avatar rounded-circle" width="40" height="40" />
+        <span class="fw-bold">Prashanth Surapaneni</span>
+      </div>
+      <div class="footer-social d-flex gap-2">
+        <a href="https://linkedin.com/in/prashanth-surapaneni" target="_blank" aria-label="LinkedIn" class="icon-link">
+          <!-- LinkedIn SVG -->
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.761 1.379-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z"/></svg>
+        </a>
+        <a href="https://github.com/Prashanth1602" target="_blank" aria-label="GitHub" class="icon-link">
+          <!-- GitHub SVG -->
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.119 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222 0 1.606-.014 2.898-.014 3.293 0 .322.216.694.825.576 4.765-1.588 8.199-6.084 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="mailto:prashanthsurapaneni123@gmail.com" aria-label="Email" class="icon-link">
+          <!-- Email SVG -->
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 13.065l-11.99-7.065v14c0 1.104.896 2 2 2h19.98c1.104 0 2-.896 2-2v-14l-11.99 7.065zm11.99-9.065c0-1.104-.896-2-2-2h-19.98c-1.104 0-2 .896-2 2v.217l12 7.083 11.98-7.083v-.217z"/></svg>
+        </a>
+        <a href="tel:+919390412730" aria-label="Phone" class="icon-link">
+          <!-- Phone SVG -->
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1.003 1.003 0 011.01-.24c1.12.37 2.33.57 3.59.57.55 0 1 .45 1 1v3.5c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4.5c0-.55.45-1 1-1H6.5c.55 0 1 .45 1 1 0 1.26.2 2.47.57 3.59.11.32.03.68-.24 1.01l-2.2 2.2z"/></svg>
+        </a>
+      </div>
+      <div class="footer-copy text-muted small">
+        &copy; 2025 Prashanth Surapaneni. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
