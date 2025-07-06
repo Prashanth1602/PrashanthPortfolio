@@ -1,12 +1,23 @@
 // script.js
 document.addEventListener("DOMContentLoaded", () => {
+  // Loading screen
+  const loadingScreen = document.getElementById('loadingScreen');
+  
+  // Hide loading screen after page loads
+  setTimeout(() => {
+    loadingScreen.classList.add('fade-out');
+    setTimeout(() => {
+      loadingScreen.style.display = 'none';
+    }, 500);
+  }, 1500);
+
   AOS.init();
 
   // Typed.js initialization
   new Typed("#typed", {
     strings: [
       "AI Explorer",
-      "Full Stack Developer",
+      "Full Stack Developer", 
       "Creative Technologist",
       "Code for Change."
     ],
@@ -15,51 +26,69 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true
   });
 
-  // Scroll to top button
+  // Scroll progress and scroll to top button
   const scrollBtn = document.getElementById("scrollTop");
+  const scrollProgress = document.getElementById("scrollProgress");
+  
   window.addEventListener("scroll", () => {
+    // Scroll to top button visibility
     scrollBtn.classList.toggle("d-none", window.scrollY < 400);
+    
+    // Scroll progress bar
+    const scrollTop = window.pageYOffset;
+    const docHeight = document.body.offsetHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollProgress.style.width = scrollPercent + "%";
   });
+  
   scrollBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
   // Light/Dark mode toggle
-  const themeToggles = document.querySelectorAll('.theme-toggle');
+  const themeToggle = document.getElementById('themeToggle');
   function updateThemeIcon(theme) {
-    themeToggles.forEach(btn => {
-      btn.textContent = theme === 'dark' ? '🌙' : '☀️';
-    });
+    if (themeToggle) {
+      themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+    }
   }
   function getCurrentTheme() {
     return document.body.getAttribute('data-bs-theme') || 'light';
   }
   // Set icon on load
   updateThemeIcon(getCurrentTheme());
-  themeToggles.forEach(toggleBtn => {
-    toggleBtn.addEventListener("click", () => {
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
       const currentTheme = getCurrentTheme();
       const newTheme = currentTheme === "dark" ? "light" : "dark";
       document.body.setAttribute("data-bs-theme", newTheme);
       updateThemeIcon(newTheme);
+      
+      // Save theme preference
+      localStorage.setItem('theme', newTheme);
     });
-  });
+  }
+  
+  // Load saved theme preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.body.setAttribute("data-bs-theme", savedTheme);
+    updateThemeIcon(savedTheme);
+  }
 
-  // Project filter
-  const filterButtons = document.querySelectorAll("#filterButtons button");
-  const projectCards = document.querySelectorAll(".project-card");
 
-  filterButtons.forEach(button => {
-    button.addEventListener("click", () => {
-      const filter = button.dataset.filter;
-      filterButtons.forEach(btn => btn.classList.remove("active"));
-      button.classList.add("active");
 
-      projectCards.forEach(card => {
-        const category = card.dataset.category;
-        card.style.display =
-          filter === "all" || filter === category ? "block" : "none";
-      });
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
     });
   });
 
